@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+}
+
+h1 {
+    padding: 20px;
+    border-top: 3px dotted lightcoral;
+    border-bottom: 3px dotted lightcoral;
+    width: 500px;
+    color: maroon;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 15px;
+    width: 20%;
+    font-size: 20px;
+}
+
+.ingredients {
+    border-bottom: 2px dashed darkcyan;
+    
+}
+.instructions {
+    border-bottom: 2px dashed darkorange;
+
+}
+
+ul, ol {
+    margin: 15px;
+}
+
+p {
+    font-weight: bold;
+    color: chocolate;
+}
