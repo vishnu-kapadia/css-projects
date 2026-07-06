@@ -7,23 +7,40 @@
     <link rel="stylesheet" href="digitalMagazine.css">
 </head>
 <body>
-    <header>
-        <h1>DigiMag</h1>
+    <header class="navbar">
+        <h1 class="logo">
+            DigiMag
+        </h1>
         <nav>
-            <ul>
-                <li>Home</li>
-                <li>Tech</li>
-                <li>Health</li>
-                <li>Science</li>
-                <li>Contact</li>
+            <ul class="navLinks">
+                <li>
+                    <a href="">Tech</a>
+                </li>
+                <li>
+                    <a href="">Health</a>
+                </li>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Science</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <article>
-            <h2>Breaking News</h2>
+        <article class="breakingNews">
+            <h2>
+                Breaking News
+            </h2>
             <section>
-                <h3>The Future of Artificial Intelligence</h3>
+                <h3>
+                    The Future of Artificial Intelligence
+                </h3>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga veniam odio quia...
                 </p>
@@ -33,11 +50,17 @@
             </section>
         </article>
 
-        <article>
-            <h2>Featured Articles</h2>
+        <article class="featuredArticles">
+            <h2>
+                Featured Articles
+            </h2>
             <section>
-                <figure><img src="" alt="Image"></figure>
-                <h3>Article Title</h3>
+                <figure>
+                    <img src="" alt="Image">
+                </figure>
+                <h3>
+                    Article Title 1
+                </h3>
                 <p>
                     Lorem, ipsum dolor...
                 </p>
@@ -46,8 +69,10 @@
                 </p>
             </section>
             <section>
-                <figure><img src="" alt="Image"></figure>
-                <h3>Article Title</h3>
+                <figure>
+                    <img src="" alt="Image">
+                </figure>
+                <h3>Article Title 2</h3>
                 <p>
                     Lorem, ipsum dolor...
                 </p>
@@ -56,8 +81,12 @@
                 </p>
             </section>
             <section>
-                <figure><img src="" alt="Image"></figure>
-                <h3>Article Title</h3>
+                <figure>
+                    <img src="" alt="Image">
+                </figure>
+                <h3>
+                    Article Title 3
+                </h3>
                 <p>
                     Lorem, ipsum dolor...
                 </p>
@@ -67,58 +96,88 @@
             </section>
         </article>
 
-        <article>
+        <article class="editorsPick">
             <h2>Editor's Pick</h2>
             <section>
-                <figure><img src="" alt="Image"></figure>
-                <h3>Article Title</h3>
+                <figure>
+                    <img src="" alt="Image">
+                </figure>
+                <h3>
+                    Article Title
+                </h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur...
                 </p>
             </section>
         </article>
 
-        <article>
+        <article class="latestArticles">
             <h2>Latest Articles</h2>
             <section>
-                <figure><img src="" alt="Image"></figure>
-                <h3>Article 1</h3>
-                <p>Short description</p>
-                <p>Read More</p>
+                <figure>
+                    <img src="" alt="Image">
+                </figure>
+                <div class="content">
+                    <h3>Article 1</h3>
+                    <p>Short description</p>
+                    <p>Read More</p>
+                </div>    
             </section>
             <section>
-                <figure><img src="" alt="Image"></figure>
-                <h3>Article 2</h3>
-                <p>Short description</p>
-                <p>Read More</p>
+                <figure>
+                    <img src="" alt="Image">
+                </figure>
+                <div class="content">
+                    <h3>Article 2</h3>
+                    <p>Short description</p>
+                    <p>Read More</p>
+                </div>
             </section>
             <section>
-                <figure><img src="" alt="Image"></figure>
-                <h3>Article 3</h3>
-                <p>Short description</p>
-                <p>Read More</p>
+                <figure>
+                    <img src="" alt="Image">
+                </figure>
+                <div class="content">
+                    <h3>Article 3</h3>
+                    <p>Short description</p>
+                    <p>Read More</p>
+                </div>
             </section>
         </article>
 
-        <article>
-            <h2>Author Spotlight</h2>
-            <figure><img src="" alt="Photo"></figure>
-            <p>John Doe</p>
-            <p>Senior Tech Writer</p>
+        <article class="authorSpotlight">
+            <h2>
+                Author Spotlight
+            </h2>
+            <section>
+                <figure>
+                    <img src="" alt="Photo">
+                </figure>
+                <p>John Doe</p>
+                <p>Senior Tech Writer</p>
+                <p>
+                    Passionate about AI, Robotics...
+                </p>
+                <p>Follow</p>
+            </section>
+        </article>
+
+        <section class="comments">
+            <h3>
+                Comments
+            </h3>
             <p>
-                Passionate about AI, Robotics...
+                Alex <br> Great article!
             </p>
-            <p>Follow</p>
-        </article>
-
-        <section>
-            <h3>Comments</h3>
-            <p>Alex <br> Great article!</p>
-            <p>Sarah <br> Love reading this.</p>
+            <p>
+                Sarah <br> Love reading this.
+            </p>
         </section>
         
-        <section>
-            <h3>Newsletter</h3>
+        <section class="newsletter">
+            <h3>
+                Newsletter
+            </h3>
             <section>
                 <p>Stay Updated</p>
                 <input type="email" name="email" id="email" placeholder="Enter your email"> 
@@ -128,10 +187,18 @@
     </main>
     <footer>
         <ul>
-            <li>About</li>
-            <li>Privacy</li>
-            <li>Contact</li>
-            <li>Careers</li>
+             <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Privacy</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+            <li>
+                <a href="">Careers</a>
+            </li>
         </ul>
         <p>
             &copy; 2026 DigiMag

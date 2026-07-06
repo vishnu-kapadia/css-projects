@@ -4,3 +4,227 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif, Courier, monospace;
+    padding: 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #333;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navLinks {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+}
+
+.navLinks a:hover {
+    color: royalblue;
+}
+
+.breakingNews {
+    padding: 20px;
+    margin: 25px 0;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.breakingNews h2 {
+    margin: 15px;
+}
+
+.breakingNews section>h3 {
+    margin: 15px;
+}
+
+.breakingNews p {
+    margin: 15px;
+}
+
+.featuredArticles {
+    padding: 20px;
+    margin: 25px 0;
+    border: 1px solid #d8ac1c;
+    text-align: center;
+}
+
+.featuredArticles section {
+    margin: 20px;
+    display: inline-block;
+}
+
+.featuredArticles figure, .featuredArticles h3, .featuredArticles p {
+    margin: 10px;
+}
+
+.editorsPick section {
+    margin: 10px 0;
+    padding: 33px 0;
+    border: 2px solid #fff004;
+}
+
+.editorsPick figure {
+    padding: 15px;
+    border-bottom: 2px dotted #fff004;
+}
+
+.editorsPick h3 {
+    padding: 10px;
+}
+
+.editorsPick p {
+    padding: 10px;
+}
+
+.latestArticles {
+    width: 80%;
+    margin: 30px 0;
+}
+
+.latestArticles h2 {
+    margin-bottom: 20px;
+}
+
+.latestArticles section {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #92df54;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.latestArticles figure {
+    width: 60px;
+    height: 60px;
+    border-right: 2px solid #92df54;
+    margin: 0;
+}
+
+.latestArticles img {
+    width: 100%;
+    height: 100%;
+}
+
+.latestArticles h3 {
+    margin-bottom: 10px;
+}
+
+.latestArticles p:first-of-type{
+    color:#666;
+    margin-bottom:10px;
+}
+
+.latestArticles p:last-of-type{
+    color:royalblue;
+    cursor:pointer;
+}
+
+.authorSpotlight {
+    margin: 15px 0;
+    width: 80%;
+}
+
+.authorSpotlight h2 {
+    margin: 10px 0;
+}
+
+.authorSpotlight section {
+    border: 1px solid lightslategray;
+    padding: 30px;
+    padding-left: 30%;
+    text-align: start;
+}
+
+.authorSpotlight figure {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.authorSpotlight p {
+    padding: 5px;
+}
+
+.authorSpotlight p:last-child {
+    color: royalblue;
+    cursor: pointer;
+}
+
+.comments {
+    margin: 20px 0;
+    width: 40%;
+    font-size: 1.2rem;
+}
+
+.comments h3 {
+    margin: 25px 0;
+}
+
+.comments p {
+    border: 1px dashed rgb(168, 104, 113);
+    margin-bottom: 25px;
+}
+
+.newsletter {
+    margin: 20px 0;
+    width: 50%;
+}
+
+.newsletter h3 {
+    margin: 10px 0;
+}
+
+.newsletter section {
+    border: 2px dotted #81648a;
+}
+
+.newsletter p, input {
+    margin: 10px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid saddlebrown;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+footer a{
+    color: #222;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: royalblue;
+}
+
+footer p {
+    margin-top: 5px;
+}
