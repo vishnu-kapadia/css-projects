@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management Dashboard</title>
+    <link rel="stylesheet" href="ecomOrderTable.css">
+</head>
+<body>
+
+    <section class="container">
+
+        <h1>📦 Order Management Dashboard</h1>
+
+        <div class="searchBox">
+            <input type="text" placeholder="🔍 Search Orders...">
+        </div>
+
+        <div class="tableContainer">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Product</th>
+                        <th>Status</th>
+                        <th>Amount</th>
+                        <th>Payment</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1001</td>
+                        <td>👨‍💼 John</td>
+                        <td>Laptop</td>
+                        <td><span class="status delivered">Delivered</span></td>
+                        <td class="amount">$899</td>
+                        <td><span class="payment paid">Paid</span></td>
+                        <td>
+                            <button class="view">View</button>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>1002</td>
+                        <td>👩‍💼 Sarah</td>
+                        <td>Mouse</td>
+                        <td><span class="status pending">Pending</span></td>
+                        <td class="amount">$25</td>
+                        <td><span class="payment pending-pay">Pending</span></td>
+                        <td>
+                            <button class="view">View</button>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>1003</td>
+                        <td>👨‍💼 David</td>
+                        <td>Keyboard</td>
+                        <td><span class="status cancelled">Cancelled</span></td>
+                        <td class="amount">$80</td>
+                        <td><span class="payment refunded">Refunded</span></td>
+                        <td>
+                            <button class="view">View</button>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>1004</td>
+                        <td>👩‍💼 Emma</td>
+                        <td>Monitor</td>
+                        <td><span class="status processing">Processing</span></td>
+                        <td class="amount">$300</td>
+                        <td><span class="payment paid">Paid</span></td>
+                        <td>
+                            <button class="view">View</button>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="4">Total Orders</th>
+                        <td colspan="3">4 &nbsp;&nbsp; | &nbsp;&nbsp; Revenue : <strong>$1304</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+
+</body>
+</html>
