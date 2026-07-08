@@ -10,21 +10,79 @@ body {
     margin: 2rem 10rem;
 }
 
-h1 {
+/* h1 {
     background-color: darkcyan;
     color: whitesmoke;
     padding: 1.2rem;
     border-radius: 1.25rem;
-}
+} */
 
 table {
     width: 100%;
     margin: 1.5rem 0;
-    border: 1px solid darkslategray;
+    border-collapse: collapse;
     border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+table caption {
+    background-color: darkcyan;
+    color: whitesmoke;
+    padding: 1.2rem;
+    border-radius: 1.25rem;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
 }
 
 th, td {
     padding: 1.1rem;
-    border-collapse: 1px solid darkslategray;
+    border: 1px solid #ddd;
+}
+
+th:first-child {
+    border-top-left-radius: 25px;
+}
+
+th:last-child {
+    border-top-right-radius: 25px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+tr:hover {
+    background-color:burlywood;
+    transition: background 0.25s;
+}
+
+td:first-child {
+    text-align: start;
+}
+
+table tfoot {
+    margin: 25px 0;
+}
+
+tfoot th, tfoot td{
+    border: 1px double black;
+}
+
+.grade {
+    display:inline-block;
+    padding:4px 10px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+.a {
+    background-color: green;
+    color:white;
+}
+
+.b {
+    background-color: yellow;
+    color: black;
 }
