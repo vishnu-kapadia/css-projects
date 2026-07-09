@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1b1b2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.heroCard {
+    width: 420px;
+    background-color: #2d3250;
+    color: white;
+    border: 3px solid gold;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: gold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+figure {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 4px solid gold;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #444;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header h2 {
+    margin-bottom: 8px;
+}
+
+.level {
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+.stats {
+    margin-bottom: 25px;
+}
+
+.stat {
+    margin-bottom: 20px;
+}
+
+.statTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.progressBar {
+    width: 100%;
+    height: 18px;
+    background-color: #444;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.health {
+    width: 80%;
+    height: 100%;
+    background-color: limegreen;
+}
+
+
+.mana {
+    width: 40%;
+    height: 100%;
+    background-color: dodgerblue;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+section h2 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #424769;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    transition: 0.3s;
+}
+
+li:hover {
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    transform: translateX(8px);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footerCard {
+    flex: 1;
+    background-color: #424769;
+    border: 2px solid gold;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.footerCard h3 {
+    color: gold;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footerCard p {
+    color: white;
+    font-size: 15px;
+}
+
+.footerCard:hover {
+    background-color: #59608d;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255,215,0,0.3);
+}
