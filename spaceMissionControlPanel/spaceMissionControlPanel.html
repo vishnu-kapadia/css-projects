@@ -11,7 +11,7 @@
     <header>
 
         <h1>🚀 SpaceX</h1>
-        <nav>   
+        <nav class="primaryNavigation">   
             <ul>
                 <li><input type="text" name="search" id="search" placeholder="🔍 Search"></li>
                 <li>🔔 Notifications</li>
@@ -24,8 +24,6 @@
     <main>
 
         <aside>
-            <h2>Navigation</h2>
-
             <ul>
                 <li>📊 Dashboard</li>
                 <li>👨‍🚀 Crew</li>
@@ -35,67 +33,73 @@
                 <li>⚙ Settings</li>
             </ul>
         </aside>
+
         <article>
-            <section>
+            <section div="missionStatus">
                 <h2>Mission Status</h2>
                 <p>
                     Mission: Mars Explorer IX
                 </p>
                 <p>
-                    Status: IN ORBIT
+                    Status: IN ORBIT <span class="greenSignal"></span>
                 </p>
                 <p>
                     Countdown: T+04:23:18
                 </p>
             </section>
 
-            <section>
-                <h2>Rocket Status</h2>
-                <p>
-                    Altitude: 348 km
-                </p>
-                <p>
-                    Velocity: 27,400 km/h
-                </p>
-                <p>
-                    Engines: ONLINE
-                </p>
-            </section>
+            <div class="quadrant">
+                
+                <section div="rocketStatus">
+                    <h2>Rocket Status</h2>
+                    <p>
+                        Altitude: 348 km
+                    </p>
+                    <p>
+                        Velocity: 27,400 km/h
+                    </p>
+                    <p>
+                        Engines: ONLINE
+                    </p>
+                </section>
 
-            <section>
-                <h2>Fuel Level</h2>
-                <p>
+                <section div="fuelLevel">
+                    <h2>Fuel Level</h2>
+                    <p>
+                        <progress id="fuel" max="100" value="84"></progress></progress>
+                        84%
+                    </p>
+                    <p>
+                        Remaining: 16%
+                    </p>
+                </section>
 
-                </p>
-                <p>
-                    Remaining: 16%
-                </p>
-            </section>
+                <section class="weather">
+                    <h2>Weather</h2>
+                    <p>
+                        Temp: -18°C
+                    </p>
+                    <p>
+                        Wind: 15 km/h
+                    </p>
+                    <p>
+                        Visibility: Clear
+                    </p>
+                </section>
 
-            <section>
-                <h2>Weather</h2>
-                <p>
-                    Temp: -18°C
-                </p>
-                <p>
-                    Wind: 15 km/h
-                </p>
-                <p>
-                    Visibility: Clear
-                </p>
-            </section>
+                <section class="crew">
+                    <h2>Crew</h2>
+                    <ul>
+                        <li>Commander</li>
+                        <li>Pilot</li>
+                        <li>Engineer</li>
+                        <li>Scientist</li>
+                    </ul>
+                </section>
 
-            <section>
-                <h2>Crew</h2>
-                <ul>
-                    <li>Commander</li>
-                    <li>Pilot</li>
-                    <li>Engineer</li>
-                    <li>Scientist</li>
-                </ul>
-            </section>
+            </div>
 
-            <section>
+            <section class="missionTimeline">
                 <h2>Mission Timeline</h2>
                 <ol>
                     <li>Launch Successful</li>
@@ -109,7 +113,7 @@
     </main>
 
     <footer>
-
+        
         <p>🔒 RESTRICTED ACCESS</p>
         <p> Operator: FDC_STATION_01</p>
         <p>Session ID: MS-2026-X</p>

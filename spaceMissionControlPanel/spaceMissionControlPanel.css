@@ -4,3 +4,91 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid darkslategrey;
+    padding: 1.5rem;
+    margin: 2rem;
+    font-weight: bolder;
+}
+
+.primaryNavigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+main {
+    border: 2px solid darkslategray;
+    padding: 1.5rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+aside {
+    
+    font-weight: bolder;
+}
+
+aside ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: start;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.greenSignal {
+    height: 1rem;
+    width: 1rem;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.quadrant {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+progress {
+    appearance: none;
+    width: 6rem;
+    height: 1rem;
+    border: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color:#e0e0e0;
+    border-radius: 4px;
+}
+progress::-webkit-progress-value {
+    background-color:#2ecc71;
+    border-radius: 4px;
+}
+
+footer {
+    border: 2px solid darkslategray;
+    padding: 1.5rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
