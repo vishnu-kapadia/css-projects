@@ -26,17 +26,23 @@ header {
     cursor: pointer;
 }
 
+.primaryNavigation ul li:hover {
+    background-color: aquamarine;
+}
+
 main {
-    border: 2px solid darkslategray;
+    border: 2px solid darkslategrey;
     padding: 1.5rem;
     margin: 2rem;
     display: flex;
-    justify-content: space-around;
+    gap: 4rem;
 }
 
 aside {
-    
     font-weight: bolder;
+    border-right: 1px solid darkslategrey;
+    cursor: pointer;
+    padding: 3rem;
 }
 
 aside ul{
@@ -47,10 +53,33 @@ aside ul{
     justify-content: start;
 }
 
+aside ul li:hover {
+    background-color: aliceblue;
+}
+
 article {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+section {
+    padding: 1rem;
+    border-radius: 8px;
+    background: while;
+}
+
+section h2 {
+    border-bottom: 2px dashed darkslategrey;
+    width: max-content;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin: 0.5rem auto;
 }
 
 .greenSignal {
@@ -62,11 +91,17 @@ article {
     position: relative;
 }
 
-.quadrant {
+.quadrantLayout {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 2rem auto;
+    margin: 2rem 0;
+}
+
+.quadrantLayout section{
+    flex: 1 1 300px;
+    border: 1px solid darkslategrey;
+    padding: 10px;
 }
 
 progress {
@@ -85,10 +120,36 @@ progress::-webkit-progress-value {
     border-radius: 4px;
 }
 
+.crew ul{
+    list-style: none;
+}
+
+.missionTimeline ol {
+    margin: 1.5rem 0 0 0.5rem;
+    line-height: 2rem;
+    list-style-type: disc;
+}
+
+.timeline li:last-child {
+    list-style: circle;
+}
+
 footer {
     border: 2px solid darkslategray;
     padding: 1.5rem;
     margin: 2rem;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
 }

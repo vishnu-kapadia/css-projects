@@ -35,7 +35,7 @@
         </aside>
 
         <article>
-            <section div="missionStatus">
+            <section class="missionStatus">
                 <h2>Mission Status</h2>
                 <p>
                     Mission: Mars Explorer IX
@@ -48,7 +48,7 @@
                 </p>
             </section>
 
-            <div class="quadrant">
+            <div class="quadrantLayout">
                 
                 <section div="rocketStatus">
                     <h2>Rocket Status</h2>
@@ -63,10 +63,10 @@
                     </p>
                 </section>
 
-                <section div="fuelLevel">
+                <section class="fuelLevel">
                     <h2>Fuel Level</h2>
                     <p>
-                        <progress id="fuel" max="100" value="84"></progress></progress>
+                        <progress id="fuel" max="100" value="84"></progress>
                         84%
                     </p>
                     <p>
@@ -101,25 +101,26 @@
 
             <section class="missionTimeline">
                 <h2>Mission Timeline</h2>
-                <ol>
-                    <li>Launch Successful</li>
-                    <li>Stage Separation</li>
-                    <li>Orbit Achieved</li>
-                    <li>Docking (Pending)</li>
-                    <li>Mars Landing</li>
+                <ol class="timeline">
+                    <li class="done">Launch Successful</li>
+                    <li class="done">Stage Separation</li>
+                    <li class="done">Orbit Achieved</li>
+                    <li class="pending">Docking</li>
+                    <li class="future">Mars Landing</li>
                 </ol>
             </section>
         </article>
     </main>
 
     <footer>
-        
-        <p>🔒 RESTRICTED ACCESS</p>
-        <p> Operator: FDC_STATION_01</p>
-        <p>Session ID: MS-2026-X</p>
-
+        <div class="footerInfo">
+            <p>🔒 RESTRICTED ACCESS</p>
+            <p> Operator: FDC_STATION_01</p>
+            <p>Session ID: MS-2026-X</p>
+        </div>
         <p>&copy; 2026 Flight Operations</p>
 
     </footer>
+
 </body>
 </html>
